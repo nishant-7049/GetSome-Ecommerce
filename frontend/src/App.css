@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Nunito", "Roboto", "sans-serif";
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

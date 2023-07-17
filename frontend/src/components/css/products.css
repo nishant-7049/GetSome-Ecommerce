@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  margin: 6vmax;
+  justify-content: center;
+}
+
+.page-item {
+  flex-basis: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:hover {
+  background-color: #f0f0f0;
+}
+.pageItemsActive {
+  background-color: #f45050;
+  color: white;
+}
+.pageItemsActive:hover {
+  background-color: #f45050;
+}
