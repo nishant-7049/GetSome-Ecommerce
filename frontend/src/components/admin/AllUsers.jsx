@@ -80,12 +80,14 @@ const AllUsers = () => {
 
   useEffect(() => {
     dispatch(getAllUsers());
+  }, [dispatch]);
+  useEffect(() => {
     if (isDeleted) {
       setTimeout(() => {
         dispatch(deleteReset());
       }, 5000);
     }
-  }, [dispatch, isDeleted]);
+  }, [isDeleted]);
   return (
     <>
       {loading ? (
