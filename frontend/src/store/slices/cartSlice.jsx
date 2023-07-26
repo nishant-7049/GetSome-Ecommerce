@@ -17,7 +17,7 @@ const cartSlice = createSlice({
   initialState: {
     cartItems:
       localStorage.getItem("cartItems") &&
-      localStorage.getItem("cartItems") != undefined
+      localStorage.getItem("cartItems") !== undefined
         ? JSON.parse(localStorage.getItem("cartItems"))
         : [],
     shippingInfo:

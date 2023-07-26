@@ -68,7 +68,7 @@ function App() {
         <Route path="/signup" element={<LoginSignUp />} />
         <Route path="/products/:keyword" element={<Products />} />
         <Route path="/password/forgot" element={<ForgotPassword />} />
-        <Route path="/password/reset/:token" element={<ResetPassword />} />
+        <Route path="/api/password/reset/:token" element={<ResetPassword />} />
         {isAuthenticated ? (
           <Route path="/account" element={<Profile />} />
         ) : (
