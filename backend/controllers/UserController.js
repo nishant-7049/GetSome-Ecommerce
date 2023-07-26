@@ -74,7 +74,7 @@ exports.forgotPassword = catchAsyncError(async (req, res, next) => {
   // for production
   const resetPasswordUrl = `${req.protocol}://${req.get(
     "host"
-  )}/api/password/reset/${resetToken}`;
+  )}/password/reset/${resetToken}`;
 
   //for development
   // const resetPasswordUrl = `http://localhost:5173/password/reset/${resetToken}`;
